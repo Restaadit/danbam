@@ -18,7 +18,7 @@ body {
 }
 
 nav {
-    background: #222;
+    background: #000;
     padding: 0 15px;
 }
 
@@ -157,12 +157,33 @@ a {
     color: #FFFFFF;
 }
 
-.text-white {
+.text-location, .text-menu{
+    margin-top: 40px;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+
+.alamat{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.alamat h2{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.text-white{
     color: #FFFFFF
 }
 
 .bg-black {
-    background-color: #111;
+    background-color: #000;
 }
 
 .about-danbam {
@@ -204,6 +225,11 @@ input[type=text],
     input[type=submit]:hover {
         background-color: #db0be2;
     }
+.text-copyright{
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 25px;
+}
 
 
 /* Tablet menu */
@@ -233,7 +259,7 @@ input[type=text],
         background-color: #db0be2;
     }
     .bg-black {
-        background-color: #111;
+        background-color: #000;
     }
 
     .menu {
@@ -284,6 +310,13 @@ input[type=text],
         background: royalblue;
         border-color: darkblue;
     }
+
+    .maps{
+        width: 200px;
+        height: 200px;
+        border: 0;
+    }
+
 }
 
 /* Desktop menu */
@@ -291,10 +324,13 @@ input[type=text],
 
     .img-food {
         border-radius: 12px;
+        width: 100%;
     }
 
     .bg-black {
         background-color: #000;
+        background-color: #000;    
+        transition: 0.3s;
     }
 
     .card {
@@ -302,7 +338,7 @@ input[type=text],
         transition: 0.3s;
         width: 100%;
         border-radius: 12px;
-        height: 430px;
+        height: 400px;
     }
 
     .card:hover {
@@ -441,4 +477,10 @@ input[type=text],
     .card-form {
         width: 500px;
     }
+    .maps{
+        width: 500px;
+        height: 400px;
+        border: 0;
+    }
+
 }
