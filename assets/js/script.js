@@ -1,8 +1,30 @@
+function validate() {
+    var x = document.forms['formname']['name']
+
+    if (x == "") {
+        alert("Field Harus Diisi");
+        return false;
+    }
+}
+
+// function validateSubmit() {
+//     let nama = document.getElementById("name")
+//     let email = document.getElementById("email")
+//     let errorNama;
+//     if (nama == "") {
+//         errorNama = "Nama Harus Diisi";
+//     } else if(email == "") {
+//         errorEmail
+//     }
+    
+//     document.getElementById("errorNama").innerHTML = errorNama;
+// }
+
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
 const items = document.querySelectorAll(".item");
 
-/* Toggle mobile menu */
+// toggle
 function toggleMenu() {
     if (menu.classList.contains("active")) {
         menu.classList.remove("active");
@@ -13,7 +35,7 @@ function toggleMenu() {
     }
 }
 
-/* Activate Submenu */
+
 function toggleItem() {
     if (this.classList.contains("submenu-active")) {
         this.classList.remove("submenu-active");
@@ -25,7 +47,7 @@ function toggleItem() {
     }
 }
 
-/* Close Submenu From Anywhere */
+// close menu
 function closeSubmenu(e) {
     let isClickInside = menu.contains(e.target);
 
@@ -33,7 +55,7 @@ function closeSubmenu(e) {
         menu.querySelector(".submenu-active").classList.remove("submenu-active");
     }
 }
-/* Event Listeners */
+
 toggle.addEventListener("click", toggleMenu, false);
 for (let item of items) {
     if (item.querySelector(".submenu")) {
@@ -42,3 +64,7 @@ for (let item of items) {
     item.addEventListener("keypress", toggleItem, false);
 }
 document.addEventListener("click", closeSubmenu, false);
+
+
+
+
