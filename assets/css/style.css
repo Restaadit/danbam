@@ -35,13 +35,13 @@ a {
 }
 
 .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: 0.3s;
-        width: 100%;
-        border-radius: 12px;
-        height: 400px;
-        text-align: center;
-    }
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 12px;
+    height: 400px;
+    text-align: center;
+}
 
 .menu,
 .submenu {
@@ -148,7 +148,7 @@ a {
 }
 
 .img-banner-aboutus {
-   object-fit: cover;
+    object-fit: cover;
     height: 200px;
     width: 100%;
     margin-top: 20px;
@@ -159,7 +159,7 @@ a {
 }
 
 .primary-btn {
-    background-color: #db0be2;
+    background-color: #0081FF;
     color: #FFFFFF;
     width: auto;
     padding: 10px;
@@ -178,13 +178,17 @@ a {
 .text-banner {
     margin-top: 50px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .text-location,
 .text-menu {
     margin-top: 40px;
 }
-.text-location, .text-menu, .text-follow{
+
+.text-location,
+.text-menu,
+.text-follow {
     margin-top: 35px;
     font-size: 40px;
     color: #FFFFFF;
@@ -223,13 +227,13 @@ a {
     color: #FFFFFF;
 }
 
-.aboutus-danbam h1{
+.aboutus-danbam h1 {
     margin-top: 70px;
     font-size: 40px;
 
 }
 
-.aboutus-danbam p{
+.aboutus-danbam p {
     margin-top: 30px;
 
 }
@@ -258,7 +262,7 @@ textarea {
 }
 
 input[type=submit] {
-    background-color: #db0be2;
+    background-color: #0081FF;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -267,7 +271,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #db0be2;
+    background-color: #0081FF;
 }
 
 .text-copyright {
@@ -312,24 +316,35 @@ span.next {
 }
 
 .img-food {
-        border-radius: 12px;
-        width: 100%;
-    }
+    border-radius: 12px;
+    width: 100%;
+}
 
-.socialmedia{
+.socialmedia {
     margin-top: 30px;
     height: 300px;
 }
 
-.icon-socmed{
+.icon-socmed {
     color: #FFFFFF;
     font-size: 40px;
     margin: 0 auto;
 }
 
+.img-logo {
+    width: 100px;
+    height: 75px;
+}
+
 
 /* Tablet menu */
 @media all and (min-width: 700px) {
+    .text-banner {
+        margin-top: 50px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
     .img-food {
         border-radius: 12px;
         width: 100%;
@@ -337,8 +352,8 @@ span.next {
     }
 
     .promo-title {
-    margin-bottom: 15px;
-}
+        margin-bottom: 15px;
+    }
 
     .slider {
         position: relative;
@@ -390,7 +405,7 @@ span.next {
     }
 
     input[type=submit] {
-        background-color: #db0be2;
+        background-color: #0081FF;
         color: white;
         padding: 12px 20px;
         border: none;
@@ -399,7 +414,7 @@ span.next {
     }
 
     input[type=submit]:hover {
-        background-color: #db0be2;
+        background-color: #0081FF;
     }
 
     .bg-black {
@@ -469,10 +484,20 @@ span.next {
         width: 50%;
     }
 
+    .img-logo {
+        width: 100px;
+        height: 75px;
+    }
+
 }
 
 /* Desktop menu */
 @media all and (min-width: 969px) {
+
+    .img-logo {
+        width: 100px;
+        height: 75px;
+    }
 
     .img-food {
         border-radius: 12px;
@@ -608,7 +633,7 @@ span.next {
         width: 100%;
     }
 
-    
+
     .img-banner-aboutus {
         display: block;
         height: 400px;
@@ -616,7 +641,7 @@ span.next {
     }
 
     .primary-btn {
-        background-color: #db0be2;
+        background-color: #0081FF;
         color: #FFFFFF;
         width: auto;
         padding: 10px;
@@ -644,7 +669,7 @@ span.next {
     }
 
     input[type=submit] {
-        background-color: #db0be2;
+        background-color: #0081FF;
         color: white;
         padding: 12px 20px;
         border: none;
@@ -653,7 +678,7 @@ span.next {
     }
 
     input[type=submit]:hover {
-        background-color: #db0be2;
+        background-color: #0081FF;
     }
 
     .card-form {
@@ -702,8 +727,9 @@ span.next {
     span.next {
         right: -150px;
     }
+
     .promo-title {
-    margin-bottom: 15px;
-}
+        margin-bottom: 15px;
+    }
 
 }
