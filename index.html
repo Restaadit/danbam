@@ -12,7 +12,7 @@
     <title>DanBam</title>
   </head>
 
-  <body>
+  <body class="bg-black">
     <!-- Navbar -->
     <nav>
       <div class="container">
@@ -21,7 +21,7 @@
           <li class="item"><a href="#">Home</a></li>
           <li class="item"><a href="#">Menu</a></li>
           <li class="item"><a href="#">About Us</a></li>
-          <li class="item"><a href="#">Location</a></li>
+          <li class="item"><a href="#">Lokasi</a></li>
           <li class="item"><a href="#">Contact Us</a></li>
           <li class="toggle">
             <a href="#"><i class="fa fa-bars"></i></a>
@@ -80,7 +80,9 @@
     <!-- Reccomendation -->
     <section class="recomend bg-black" style="margin-top: 30px">
       <div class="container">
-        <h2 class="text-white">Menu Rekomendasi</h2>
+        <center>
+          <h2 class="text-menu">Menu Rekomendasi</h2>
+        </center>
         <div class="row" style="margin-top: 50px">
           <div class="col-3">
             <div class="card">
@@ -88,7 +90,6 @@
                 src="assets/img/makanan.jfif"
                 class="img-food"
                 alt="Avatar"
-                style="width: 100%"
               />
               <div class="container">
                 <h4 class="text-white"><b>Tteokbokki</b></h4>
@@ -105,7 +106,6 @@
                 src="assets/img/makanan.jfif"
                 class="img-food"
                 alt="Avatar"
-                style="width: 100%"
               />
               <div class="container">
                 <h4 class="text-white"><b>Tteokbokki</b></h4>
@@ -116,13 +116,13 @@
               </div>
             </div>
           </div>
+
           <div class="col-3">
             <div class="card">
               <img
                 src="assets/img/makanan.jfif"
                 class="img-food"
                 alt="Avatar"
-                style="width: 100%"
               />
               <div class="container">
                 <h4 class="text-white"><b>Tteokbokki</b></h4>
@@ -138,34 +138,40 @@
     </section>
 
     <!-- Location -->
-    <section class="location bg-black" style="margin-top: 30px">
+    <section class="location bg-black">
       <div class="container">
-        <h2 class="text-white">Lokasi DanBam</h2>
+        <center>
+          <h2 class="text-location">Lokasi DanBam</h2>
+        </center>
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 alamat">
+            {% comment %}
+            <center>
+              {% endcomment %}
+              <h2>Alamat :</h2>
+              <p class="text-white">
+                57-26 Itaewon 1(il)-dong, Yongsan-gu, Seoul, South Korea
+              </p>
+              {% comment %}
+            </center>
+            {% endcomment %}
+          </div>
+
+          <div class="col-6 alamat">
             <iframe
               class="maps"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.874781510918!2d126.98694751571303!3d37.53444893372199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3708d1d7d1f%3A0xb2011902448600b6!2sDanbam!5e0!3m2!1sen!2sid!4v1623913105133!5m2!1sen!2sid"
-              width="600"
-              height="450"
-              style="border: 0"
               allowfullscreen=""
               loading="lazy"
             ></iframe>
-          </div>
-          <div class="col-6">
-            <h2 class="text-white">Alamat :</h2>
-            <p class="text-white">
-              57-26 Itaewon 1(il)-dong, Yongsan-gu, Seoul, South Korea
-            </p>
           </div>
         </div>
       </div>
     </section>
 
     <footer class="bg-black">
-      <div class="container" style="color: aliceblue">
-        <h2 style="padding: 10px">Copyright &copy; 2021 DanBam Restoran</h2>
+      <div class="container">
+        <h2 class="text-copyright">Copyright &copy; 2021 DanBam Restoran</h2>
       </div>
     </footer>
 
