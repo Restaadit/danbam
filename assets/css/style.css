@@ -359,7 +359,7 @@ span.next {
         position: relative;
         height: 337px;
         width: 600px;
-        margin-left: 15px;
+        margin-left: 50px;
     }
 
     .slider img {
@@ -368,8 +368,8 @@ span.next {
         position: absolute;
         opacity: 0;
         transition: 1s;
-        width: 250px;
-        height: 250px;
+        width: 500px;
+        height: 400px;
     }
 
     img.active {
@@ -387,7 +387,7 @@ span.next {
     }
 
     span.next {
-        right: 350px;
+        right:100px;
     }
 
 
