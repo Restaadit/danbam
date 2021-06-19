@@ -1,24 +1,39 @@
-function validate() {
-    var x = document.forms['formname']['name']
 
-    if (x == "") {
-        alert("Field Harus Diisi");
-        return false;
+
+// slider promo
+$('.slider span.next').click(function() {
+  $current = $(this).siblings('img.active');
+  $next = $current.next('img');
+  if ($next.length != 0) {
+    $current.removeClass('active');
+    $next.addClass('active');
+  }
+})
+$('.slider span.prev').click(function() {
+  $current = $(this).siblings('img.active');
+  $prev = $current.prev('img');
+  if ($prev.length != 0) {
+    $current.removeClass('active');
+    $prev.addClass('active');
+  }
+})
+
+// validate form contact page
+
+function validate() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let pesan = document.getElementById("pesan").value;
+
+    if (name == "") {
+        alert("Nama Harus Diisi");
+    } else if (email == "") {
+        alert("Email Harus Diisi");
+    } else if (pesan == "" ) {
+        alert("Pesan Harus Diisi");
     }
 }
 
-// function validateSubmit() {
-//     let nama = document.getElementById("name")
-//     let email = document.getElementById("email")
-//     let errorNama;
-//     if (nama == "") {
-//         errorNama = "Nama Harus Diisi";
-//     } else if(email == "") {
-//         errorEmail
-//     }
-    
-//     document.getElementById("errorNama").innerHTML = errorNama;
-// }
 
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
